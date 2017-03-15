@@ -39,20 +39,20 @@
         hs.outlineType = 'rounded-white';
    </script>
    <script type="text/javascript">
-$(document).ready(function(){
-  
-  var $scrollHeight = 700, //величина прокрутки
-      delay = 5000; // задержка
-  
-  setTimeout(function(){
-   if($(window).scrollTop() == 0){
-      $('html, body').animate({scrollTop: $scrollHeight}, 1000);
-   }
-       
-  }, delay);
-  
-});
-</script>
+    
+    (function () {
+        var $scrollHeight = 700, //величина прокрутки
+            delay = 5000; // задержка
+
+            setTimeout(function(){
+             if($(window).scrollTop() == 0){
+              $('html, body').animate({scrollTop: $scrollHeight}, 1000);
+            }
+
+          }, delay);
+    }());
+   
+  </script>
 
 </head>
 <body>
