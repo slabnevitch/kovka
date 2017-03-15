@@ -1,0 +1,107 @@
+
+div.shadow{position:relative;width:100%;height:33px; margin:-40px 0px 0 0px; background:url(../img/shadow.png) center top no-repeat}
+.portfolio{position:relative;width:1150px;height:140px;overflow:hidden;margin:0 auto}
+.portfolio #gallery_carousel{position:relative;float:left;width:748px;height:139px;margin:0px 0px 0 80px;overflow:hidden;}
+.portfolio #gallery_carousel #prev{position:absolute;top:60px;left:-30px;width:26px;height:50px;background:url(../img/prevbtn.png) no-repeat;text-indent:-99999px}
+.portfolio #gallery_carousel #next{position:absolute;top:60px;right:-30px;width:26px;height:50px;background:url(../img/nextbtn.png) no-repeat;text-indent:-99999px}
+.portfolio #gallery_carousel li{list-style:none;position:relative;float:left;width:200px;height:139px;margin:0 8px}
+.portfolio #gallery_carousel li img{position:relative;float:left;width:200px;height:139px;margin: 0}
+.portfolio #prev{position:absolute;top:26px;left:55px;width:32px;height:48px;background:url(../img/arrows.png) no-repeat;text-indent:-99999px}
+.portfolio #next{position:absolute;top:26px;right:119px;width:32px;height:48px;background:url(../img/arrows.png) -32px 0 no-repeat;text-indent:-99999px}
+
+/* Базовые стили модального окна  */
+.overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    bottom: 0;
+    cursor: default;
+    left: 0;
+    opacity: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    visibility: hidden;
+    z-index: 1;
+    -webkit-transition: opacity .5s;
+    -moz-transition: opacity .5s;
+    -ms-transition: opacity .5s;
+    -o-transition: opacity .5s;
+    transition: opacity .5s;
+}
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+.popup {
+    background-color: #E0E0E0;
+    border: 3px solid #fff;
+    display: inline-block;
+    left: 20%;
+    opacity: 0;
+    padding: 20px;
+    position: fixed;
+    text-align: justify;
+	text-transform:uppercase;
+	font-size: 22px;
+    top: 25%;
+    visibility: hidden;
+    z-index: 10;
+	
+    -webkit-transform: translate(-17%, -17%);
+    -moz-transform: translate(-17%, -17%);
+    -ms-transform: translate(-17%, -17%);
+    -o-transform: translate(-17%, -17%);
+    transform: translate(-17%, -17%);
+
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+
+    -webkit-box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
+    -moz-box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
+    -ms-box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
+    -o-box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
+    box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
+
+    -webkit-transition: opacity .5s, top .5s;
+    -moz-transition: opacity .5s, top .5s;
+    -ms-transition: opacity .5s, top .5s;
+    -o-transition: opacity .5s, top .5s;
+    transition: opacity .5s, top .5s;
+}
+.overlay:target+.popup {
+    top: 25%;
+    opacity: 1;
+    visibility: visible;
+}
+.close {
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 30px;
+    line-height: 30px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    text-decoration: none;
+    top: -15px;
+    width: 30px;
+
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    border-radius: 15px;
+}
+.close:before {
+    color: rgba(255, 255, 255, 0.9);
+    content: "X";
+    font-size: 24px;
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.9);
+}
+.close:hover {
+    background-color: rgba(64, 128, 128, 0.8);
+}
+.popup p, .popup div {
+    padding: 0px 5px 0px 5px;
+}
+/* окончание модального окна  */

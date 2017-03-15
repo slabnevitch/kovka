@@ -1,0 +1,45 @@
+@media screen and (min-width:0\0) { 
+	.ch-item:hover .ch-info {
+		-webkit-transform: none;
+		-moz-transform: none;
+		-o-transform: none;
+		-ms-transform: none;
+		transform: none;
+		
+	}
+	.sec1 .oCompany .ch-info h3,
+	.sec1 .oCompany .ch-info p{
+		padding: 0;
+		opacity: 0;
+		-webkit-transition: all 1s ;
+		-moz-transition: all 1s;
+		-o-transition: all 1s;
+		transition: all 1s;
+	}
+	
+	.ch-info .ch-info-back {
+		-webkit-transform: none;
+		-moz-transform: none;
+		-o-transform: none;
+		-ms-transform: none;
+		transform: none;
+		opacity: 0;
+		-webkit-transition: all .3s ;
+		-moz-transition: all .3s;
+		-o-transition: all .3s;
+		transition: all .3s;
+		height: 0%;
+	}
+	.ch-item:hover .ch-info .ch-info-back {
+		height: 100%;
+		opacity: 1;
+	}
+	.ch-item:hover .ch-info h3{
+		padding-top: 30px;
+	}
+	.ch-item:hover .ch-info p,
+	.ch-item:hover .ch-info h3{
+		opacity: 1;
+	}
+	
+}

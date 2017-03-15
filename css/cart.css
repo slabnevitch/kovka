@@ -1,0 +1,102 @@
+/* @import C:\Site-Soft\OpenServer\domains\profi-kovka.su\yii2\views\site\cart.php */
+/* @import C:\Site-Soft\OpenServer\domains\profi-kovka.su\yii2\views\site\cart-table-2.php */
+.cart-container {
+  background-color: white;
+  color: black;
+  font-size: 24px;
+  line-height: 1.42857143;
+  font-weight: normal;
+  text-align: start;
+  margin-bottom: 30px;
+  border: 1px grey solid;
+}
+.cart-container .cart_t_row {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 10px;
+  align-items: stretch;
+  justify-content: space-between;
+  border-bottom: solid 1px gainsboro;
+}
+.cart-container .cart_t_row__itogo {
+  border-bottom: none;
+}
+.cart-container .cart_t_b {
+  flex-grow: 1;
+  margin: 4px 4px;
+}
+.cart-container .cart_t_b_img {
+  max-width: 200px;
+}
+.cart-container .cart_t_b_img img {
+  width: 100%;
+}
+.cart-container .cart_t_b_body {
+  min-width: 400px;
+  flex-basis: 400px;
+  flex-grow: 8;
+}
+.cart-container .cart_t_b_header {
+  text-align: center;
+}
+.cart-container .cart_t_b_price {
+  min-width: 100px;
+  text-align: right;
+  margin-right: 20px;
+}
+.cart-container .cart_t_bold {
+  font-size: 120%;
+  font-weight: bold;
+}
+
+.cart-container .cart_t_bold1 {
+  font-size: 120%;
+  font-weight: bold;
+  margin: 3px 70px;
+}
+.cart-container .cart_t_bold-0 {
+  font-weight: bold;
+}
+.cart-container .cart-t-col {
+  margin: 10px;
+}
+.cart-container .cart-btn {
+  display: inline-block;
+  margin: 10px 20px;
+  padding: 0 5px;
+  line-height: 40px;
+  background-color: #EAEAEA;
+  border-radius: 4px;
+  box-shadow: 0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
+  border: none;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #c30000;
+  width: 160px;
+  height: 40px;
+  text-align: center;
+  text-decoration: none;
+}
+.cart-container .cart_delete .cart-btn {
+  font-size: 14px;
+  font-weight: normal;
+  margin: 2px 0px;
+  color: #888;
+  background-color: transparent;
+  border: transparent 1px solid;
+  box-shadow: none;
+  text-align: end;
+}
+.cart-button_b {
+  display: flex;
+  justify-content: space-around;
+}
+.cart-baner {
+  position: fixed;
+  top: 30px;
+  right: 140px;
+  z-index: 999;
+  width: 00px;
+  height: 100px;
+}

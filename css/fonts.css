@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'MyriadProCondensed';
+    src: url('../font/myriadpro-conhhd-webfont.eot');
+    src: url('../font/myriadpro-conhhd-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/myriadpro-conhhd-webfont.woff') format('woff'),
+         url('../font/myriadpro-conhhd-webfont.ttf') format('truetype'),
+         url('../font/myriadpro-conhhd-webfont.svg#myriad_procondensed') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MyriadProCondensed';
+    src: url('../font/myriadpro-boldcond-webfont.eot');
+    src: url('../font/myriadpro-boldcond-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/myriadpro-boldcond-webfont.woff') format('woff'),
+         url('../font/myriadpro-boldcond-webfont.ttf') format('truetype'),
+         url('../font/myriadpro-boldcond-webfont.svg#myriad_probold_condensed') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}

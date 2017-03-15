@@ -1,0 +1,108 @@
+/*Css Reset*/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+
+
+		<div id="AllWuS">
+				<ul class="pull-left">
+					<li><img src="img/Wus1.png" alt=""><span>
+						Прозрачность
+					</span></li>
+					<li><img src="img/Wus2.png" alt=""><span>
+						Гарантированные <br> 
+результаты
+					</span></li>
+					<li><img src="img/Wus3.png" alt=""><span>
+						Полное погашение любого <br>
+ кредита за 1-2 года
+					</span></li>
+				</ul>
+				<ul class="pull-right">
+					<li><img src="img/Wus4.png" alt=""><span>
+						Персональный метод
+					</span></li>
+					<li><img src="img/Wus5.png" alt=""><span>
+						SMS -уведомления о погашении
+					</span></li><br>
+					<li><img src="img/Wus6.png" alt=""><span>
+						Опыт более 7 лет по всей РФ
+					</span></li>
+				</ul>
+				</div>
+
+		<script>
+	$(document).ready(function() {
+		google_maps(); // Load google maps onload page
+
+				function google_maps() {
+                var latlng = new google.maps.LatLng(53.533676,49.317241);
+                var settings = {
+                  zoom: 16,
+                  center: latlng,
+                  mapTypeControl: true,
+                  mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU},
+                  navigationControl: false,
+                  navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL},
+                  mapTypeId: google.maps.MapTypeId.ROADMAP
+              };
+			 	var map = new google.maps.Map(document.getElementById("google_map"), settings);
+			  	var myLatlng = new google.maps.LatLng(53.533676,49.317241);
+
+			  	var myOptions = {
+	    zoom: 16,
+	    center: myLatlng,
+	    mapTypeId: google.maps.MapTypeId.ROADMAP
+    }
+
+    var yoga = new google.maps.LatLng(53.533721,49.319987);
+
+    var iconBase = 'img/';
+			var marker = new google.maps.Marker({position: yoga,map: map,icon: iconBase + 'marker.png'});
+	}
+});
+	</script>
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
