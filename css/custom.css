@@ -25,7 +25,7 @@ strong {
 	font-weight: bold;
 }
 body {
-    min-width: 1100px;
+    min-width: 1200px;
     overflow-x: hidden;
 }
 .form_in .name, .form_in .phone{
