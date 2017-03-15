@@ -97,6 +97,7 @@ body {
 header {
 	background: url(../img/bg/2.jpg)no-repeat center 0;
 	width: 100%;
+	min-width: 1100px;
 	padding-top: 170px;
 }
 header h3 {
